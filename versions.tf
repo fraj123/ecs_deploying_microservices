@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "fraj123"
+
+    workspaces {
+      name = "ecs_deploying_microservices"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
